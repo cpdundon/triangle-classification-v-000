@@ -9,7 +9,12 @@ class Triangle
   
   def kind
     arr = [side_a, side_b, side_c]
-    arr.sort
+    arr.sort!
+    
+    if arr[0] <= 0 || (arr[0] + arr[1] <= arr[2])
+      raise TriangleError
+      
+    end
     
     if (side_a == side_b) && (side_a == side_c)
       :equilateral  

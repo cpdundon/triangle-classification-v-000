@@ -12,8 +12,11 @@ class Triangle
     arr.sort!
     
     if arr[0] <= 0 || (arr[0] + arr[1] <= arr[2])
-      raise TriangleError
-      
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message
+      end
     end
     
     if (side_a == side_b) && (side_a == side_c)
@@ -27,7 +30,7 @@ class Triangle
 
   class TriangleError < StandardError
     def message 
-      "you must give the get_married method an argument of an instance of the person class!"
+      "You must enter three sides grerater than zero that satisfy the triangle inequality!"
     end
 end
 end

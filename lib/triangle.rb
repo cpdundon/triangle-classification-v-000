@@ -13,7 +13,7 @@ class Triangle
     elsif
       :isosceles
     else
-      :
+      :scalene
     end
   end
 

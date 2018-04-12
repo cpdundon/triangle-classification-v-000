@@ -18,7 +18,7 @@ class Triangle
           puts error.message
       end
     
-    elsifif (side_a == side_b) && (side_a == side_c)
+    elsif (side_a == side_b) && (side_a == side_c)
       :equilateral  
     elsif side_a == side_b || side_a == side_c || side_b == side_c
       :isosceles

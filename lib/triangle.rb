@@ -11,8 +11,6 @@ class Triangle
     arr = [side_a, side_b, side_c]
     arr.sort!
     
-    puts arr
-    
     if (arr[0] <= 0) || (arr[0] + arr[1] <= arr[2])
       begin
         raise TriangleError

@@ -11,7 +11,7 @@ class Triangle
     if side_a == side_b == side_c
       :equilateral  
     elsif
-      :isisoles
+      :isosceles
     else
       :
     end

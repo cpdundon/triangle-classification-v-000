@@ -1,5 +1,11 @@
 class Triangle
-  
+  attr_accessor :side_a, :side_b, :side_c
+ 
+  def initialize(a, b, c)
+    self.side_a = a
+    self.side_b = b
+    self.side_c = c
+  end
  
   class TriangleError < StandardError
     def message 

@@ -6,6 +6,8 @@ class Triangle
     self.side_b = b
     self.side_c = c
   end
+  
+  
  
   class TriangleError < StandardError
     def message 

@@ -8,6 +8,9 @@ class Triangle
   end
   
   def kind
+    arr = [side_a, side_b, side_c]
+    arr.sort
+    
     if (side_a == side_b) && (side_a == side_c)
       :equilateral  
     elsif side_a == side_b || side_a == side_c || side_b == side_c

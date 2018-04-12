@@ -11,7 +11,7 @@ class Triangle
     arr = [side_a, side_b, side_c]
     arr.sort!
     
-    if (arr[0] <= 0) #|| (arr[0] + arr[1] <= arr[2])
+    if (arr[0] <= 0) || (arr[0] + arr[1] <= arr[2])
       raise Triangle::TriangleError
       
     elsif (side_a == side_b) && (side_a == side_c)

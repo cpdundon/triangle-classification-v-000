@@ -1,5 +1,5 @@
 class Triangle
-  # triangle code
+  
  
   class TriangleError < StandardError
     def message 

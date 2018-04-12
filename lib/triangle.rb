@@ -17,6 +17,8 @@ class Triangle
       rescue TriangleError => error
           puts error.message
       end
+      
+      return
     end
     
     if (side_a == side_b) && (side_a == side_c)

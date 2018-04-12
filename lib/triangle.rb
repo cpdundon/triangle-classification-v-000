@@ -12,12 +12,8 @@ class Triangle
     arr.sort!
     
     if (arr[0] <= 0) #|| (arr[0] + arr[1] <= arr[2])
-      begin
-        raise Triangle::TriangleError
-      rescue Triangle::TriangleError => error
-          puts error.message
-      end
-    
+      raise Triangle::TriangleError
+      
     elsif (side_a == side_b) && (side_a == side_c)
       :equilateral  
     elsif side_a == side_b || side_a == side_c || side_b == side_c

@@ -13,7 +13,7 @@ class Triangle
     
     puts arr
     
-    if arr[0] <= 0 || (arr[0] + arr[1] <= arr[2])
+    if (arr[0] <= 0) || (arr[0] + arr[1] <= arr[2])
       begin
         raise TriangleError
       rescue TriangleError => error

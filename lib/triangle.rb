@@ -32,5 +32,5 @@ class Triangle
     def message 
       "You must enter three sides grerater than zero that satisfy the triangle inequality!"
     end
-end
+  end
 end

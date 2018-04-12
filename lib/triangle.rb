@@ -27,9 +27,11 @@ class Triangle
     end
   end
 
-  class TriangleError < StandardError
+  
+end
+
+class TriangleError < StandardError
     def message 
       "You must enter three sides grerater than zero that satisfy the triangle inequality!"
     end
-  end
 end
